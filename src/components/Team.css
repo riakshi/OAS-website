@@ -1,0 +1,77 @@
+:root {
+  --color-1: #dce3d8; /* light greenish-gray */
+  --color-2: #e6ebc9; /* pale yellow-green */
+  --color-3: #f8f8f4; /* off-white */
+  --color-4: #f5f5dc; /* cream */
+  --color-5: #d2b48c; /* warm tan */
+  --color-green: #95d998; /* strong green for arrows */
+}
+
+/* Team section full width */
+#team {
+  background-color: var(--color-1); /* light green background */
+  width: 100%;
+  padding: 80px 0;
+}
+
+/* Card styling */
+#team .card {
+  background-color: var(--color-4);
+  border: 1px solid var(--color-2);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#team .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  border-color: var(--color-5);
+}
+
+/* Team images */
+#team img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--color-5);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: 20px; /* prevents cut-off */
+}
+
+/* Text styling */
+#team .card-body h5 {
+  color: var(--color-5);
+  font-weight: 700;
+}
+#team .card-body p {
+  margin: 4px 0;
+  color: #222; /* dark text for visibility */
+}
+#team .card-body p:first-of-type {
+  font-style: italic;
+  color: #333; /* role text more visible */
+}
+#team .card-body .text-muted {
+  color: var(--color-green) !important;
+  font-weight: 500;
+}
+
+/* Carousel arrows without circles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* remove default icon */
+  width: auto;
+  height: auto;
+}
+
+.carousel-control-prev-icon::after {
+  content: '‹';
+  font-size: 3rem;
+  color: var(--color-green); /* ✅ green arrow */
+}
+
+.carousel-control-next-icon::after {
+  content: '›';
+  font-size: 3rem;
+  color: var(--color-green); /* ✅ green arrow */
+}

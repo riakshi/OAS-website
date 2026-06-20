@@ -1,0 +1,62 @@
+/* 🎨 Define palette variables */
+:root {
+  --color-1: #dce3d8; /* light greenish-gray */
+  --color-2: #e6ebc9; /* pale yellow-green */
+  --color-3: #f8f8f4; /* off-white */
+  --color-4: #f5f5dc; /* light cream */
+  --color-5: #d2b48c; /* warm tan/brown */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-5) !important; /* warm tan */
+}
+.navbar-brand, .nav-link {
+  color: var(--color-3) !important; /* off-white text */
+}
+.nav-link:hover {
+  color: var(--color-2) !important; /* pale yellow-green hover */
+}
+
+
+
+
+/* Project cards */
+.project-card {
+  background-color: var(--color-4); /* cream background */
+  border: 1px solid var(--color-2); /* pale green border */
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Projects section */
+#projects {
+  padding-top: 100px;
+  text-align: center;
+  background-color: var(--color-1); /* light greenish-gray */
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: var(--color-2);
+  color: var(--color-5);
+  border: none;
+}
+.btn-custom:hover {
+  background-color: var(--color-5);
+  color: var(--color-3);
+}
+
+/* Scroll offset for fixed navbar */
+:target {
+  scroll-margin-top: 80px;
+}
