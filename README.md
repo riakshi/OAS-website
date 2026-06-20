@@ -1,16 +1,49 @@
-# React + Vite
+# OAS Architecture 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OAS Architecture is a visionary web application showcasing innovative and sustainable architectural designs.  
+Built with **React + Vite**, styled using **Bootstrap**, and deployed via **Firebase Hosting**, the project emphasizes modern UI, responsive layouts, and eco-conscious design principles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Beige & Black Theme** for a clean, architectural aesthetic
+- **Responsive Navbar** with routes:
+  - Home
+  - About
+  - Services
+  - Projects
+  - More
+  - Contact
+  - Job Highlights
+- **Hero Carousel** for showcasing architectural visuals
+- **About Section** describing OAS Architecture’s mission
+- **Services Page** with 6 interactive flip cards
+- **Projects Dashboard** with tabs for Interior, Planning, and Construction
+- **User Authentication** (Login/Register forms using Formik)
+- **Video Dashboard** with popup video player (YouTube-style)
+- **Firebase Deployment** with Firestore integration
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **Frontend:** React, Vite, Bootstrap
+- **Routing:** React Router
+- **Forms:** Formik
+- **Database & Hosting:** Firebase + Firestore
+- **Version Control:** Git & GitHub
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Getting Started
+
+### Prerequisites
+- Node.js (>= 18)
+- npm or yarn
+- Git
+- Firebase CLI
+
+### Installation
+Clone the repository:
+```bash
+git clone https://github.com/riakshi/OAS-website.git
+cd OAS-website
