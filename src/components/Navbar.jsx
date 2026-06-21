@@ -15,12 +15,26 @@ function Navbar() {
         if (section) section.scrollIntoView({ behavior: "smooth" });
       }, 300);
     }
+    // Close the navbar after click
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove("show");
+    }
+  };
+
+  const closeMenu = () => {
+    const navbarCollapse = document.getElementById("navbarNav");
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove("show");
+    }
   };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand fw-bold" to="/">OAS</Link>
+        <Link className="navbar-brand fw-bold" to="/" onClick={closeMenu}>
+          OAS
+        </Link>
 
         {/* Hamburger toggle button */}
         <button
@@ -38,7 +52,9 @@ function Navbar() {
         {/* Collapsible menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/" onClick={closeMenu}>Home</Link>
+            </li>
 
             <li className="nav-item">
               <a
@@ -66,8 +82,16 @@ function Navbar() {
               </a>
             </li>
 
-            <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/jobs">Job Highlights</Link></li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/services" onClick={closeMenu}>
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/jobs" onClick={closeMenu}>
+                Job Highlights
+              </Link>
+            </li>
 
             <li className="nav-item">
               <a
