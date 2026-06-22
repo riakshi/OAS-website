@@ -60,3 +60,26 @@ html {
 :target {
   scroll-margin-top: 80px;
 }
+/*About section */
+/* Default desktop/tablet styling */
+.about-photo {
+  /* max-height: 400px; */
+}
+
+/* Mobile: make photo full screen */
+@media (max-width: 768px) {
+  .about-photo {
+    width: 100vw;
+    height: 100vh;
+    max-height: 400px;
+    margin: 0;
+    border-radius: 0; /* remove rounded corners for full screen */
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/*end*/

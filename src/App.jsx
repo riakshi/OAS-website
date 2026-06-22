@@ -6,9 +6,11 @@ import TeamSection from "./components/Team";
 import ServicesPage from "./components/ServicesPage";
 import Footer from "./components/Footer";
 import JobHighlightsPage from "./components/JobHighlightsPage";
+import ConsultationModal from "./components/ConsultationModal";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 function App() {
   return (
@@ -29,14 +31,15 @@ function App() {
         />
 
         {/* Dedicated pages */}
-        <Route path="/about" element={<AboutSection/>} />
+        <Route path="/about" element={<AboutSection />} />
         <Route path="/team" element={<TeamSection />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/jobs" element={<JobHighlightsPage />} />
         <Route path="/contact" element={<Footer />} />
       </Routes>
-       <Footer />
-              
+      <Footer />
+      <ConsultationModal />
+     
     </Router>
   );
 }
